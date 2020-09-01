@@ -6,6 +6,14 @@ background: #FFFFFF;
 background hero: #2F303A;
 
 */
+*,
+*::before *::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+
 :root {
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
@@ -20,6 +28,8 @@ body {
 	background: var(--primary-white-color);
 	color: var(--primary-text-color);
 	font-size: 16px;
+	margin: 0px auto;
+	width: 1600px;
 }
 
 .logo {
@@ -29,15 +39,31 @@ body {
 	font-size: 26px;
 	line-height: 1.2;
 	text-decoration: none;
+	margin-top: 24px;
+	margin-bottom: 25px;
 }
 .logo-title {
 	color: var(--accent-color);
 	font-family: Raleway;
+	margin-top: 24px;
+	margin-bottom: 25px;
 }
 ul {
 	list-style: none;
 }
 /* Site nav*/
+.container {
+	width: 1230px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.site-nav {
+	display: flex;
+}
+.site-nav .item {
+	margin-right: 50px;
+}
 .site-nav .link {
 	color: var(--title-text-color);
 	font-weight: 500;
@@ -53,10 +79,22 @@ ul {
 	color: var(--accent-color);
 }
 
+.section {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 /* hero */
-
+.hero {
+	width: 1600px;
+	margin: 0px;
+}
 .hero-title {
 	/*color: var(--primary-white-color) */
+	width: 696px;
+	height: 120px;
+	margin: 452px;
+	margin-top: 280px;
+	margin-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -64,33 +102,61 @@ ul {
 	text-align: center;
 	letter-spacing: 0.06em;
 }
-
 .hero .button {
+	width: 200px;
+	height: 50px;
+	margin-top: 0px;
+	border-radius: 4px;
+	padding: 10px 32px;
+	border-color: transparent;
 	font-weight: 700;
 	line-height: 1.9;
+	text-align: center;
 	letter-spacing: 0.06em;
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
 
+li {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
 /*features*/
 
-.features-list {
+.features {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
+	margin: 0px;
 }
-.features-list-title {
+.features-list {
+	margin: 0px;
+}
+.features .title {
 	color: var(--title-text-color);
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.1;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	width: 270px;
+	height: 16px;
+	margin-bottom: 10px;
 }
-
+.features .content {
+	width: 270px;
+	height: 75px;
+}
 /* work */
+.work {
+	margin: 0px;
+}
+.img-work {
+	width: 370px;
+	height: 294px;
+}
 .work-title {
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -100,6 +166,16 @@ ul {
 	letter-spacing: 0.03em;
 }
 /* team */
+.team-card {
+	max-width: 270;
+	width: 270px;
+	height: 368px;
+	margin: 0px;
+}
+.img-card {
+	width: 270px;
+	height: 260px;
+}
 
 .team-list {
 	font-weight: 400;
@@ -144,6 +220,9 @@ ul {
 }
 
 /*projects*/
+.project {
+	margin: 0px;
+}
 .project-title {
 	color: var(--title-text-color);
 	font-weight: 700;
