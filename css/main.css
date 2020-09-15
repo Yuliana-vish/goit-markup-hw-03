@@ -99,6 +99,7 @@ a {
 	margin-right: 50px;
 }
 .link {
+	display: inline-block;
 	text-decoration: none;
 }
 .menu-item .link {
@@ -373,6 +374,9 @@ address {
 	color: var(--primary-white-color);
 }
 .address .contact-item {
-	margin-top: 9px;
+	display: inline-block;
 	color: rgba(255, 255, 255, 0.6);
+}
+.address .link {
+	margin-top: 9px;
 }
