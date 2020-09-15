@@ -48,7 +48,8 @@ ul {
 	flex-wrap: wrap;
 }
 li {
-	display: inline-block;
+	display: block;
+	margin: 0;
 }
 img {
 	display: block;
@@ -374,7 +375,7 @@ address {
 	color: var(--primary-white-color);
 }
 .address .contact-item {
-	display: inline-block;
+	display: block;
 	color: rgba(255, 255, 255, 0.6);
 }
 .address .link {
